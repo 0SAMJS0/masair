@@ -48,7 +48,7 @@ window.MASAIR = {
     {
       id: "syed",
       name: "Syed",
-      nickname: "", // EDIT
+      nickname: "Sid", // EDIT
       role: "Left Flank Commander", // EDIT
       teaser: "Holding down the far left of the photo.", // EDIT
       bio: "First in line, white shalwar kameez, blazer on top. If the photo were a sentence, Syed is the capital letter.", // EDIT
@@ -67,7 +67,7 @@ window.MASAIR = {
     {
       id: "daud",
       name: "Daud",
-      nickname: "", // EDIT
+      nickname: "David", // EDIT
       role: "Deputy of Standing Politely", // EDIT
       teaser: "Hands folded. Smile loaded.", // EDIT
       bio: "Glasses, navy blazer, hands clasped like he is about to be introduced to somebody's uncle.", // EDIT
@@ -86,7 +86,7 @@ window.MASAIR = {
     {
       id: "sumaid",
       name: "Sumaid",
-      nickname: "", // EDIT
+      nickname: "Maida", // EDIT
       role: "Dark Suit, No Notes", // EDIT
       teaser: "Dressed like the meeting is about you.", // EDIT
       bio: "Dark suit, glasses, perfectly neutral expression. Nobody knows what Sumaid is thinking and the photo is not telling.", // EDIT
@@ -105,7 +105,7 @@ window.MASAIR = {
     {
       id: "adarsh",
       name: "Adarsh",
-      nickname: "", // EDIT
+      nickname: "Profo", // EDIT
       role: "Centre of Attention (Geographically)", // EDIT
       teaser: "Six gold buttons and a plan.", // EDIT
       bio: "Double-breasted blazer, cream trousers, standing almost exactly in the middle. Has a cat walking past his shoes and has chosen not to address it.", // EDIT
@@ -124,7 +124,7 @@ window.MASAIR = {
     {
       id: "shaddy",
       name: "Shaddy",
-      nickname: "", // EDIT
+      nickname: "Shado", // EDIT
       role: "Man in the Mystery Ring", // EDIT
       teaser: "Arrived pre-framed.", // EDIT
       bio: "Grey suit, calm hands, and a face delivered through a ring that nobody has explained. We have stopped asking.", // EDIT
@@ -143,7 +143,7 @@ window.MASAIR = {
     {
       id: "abbasi",
       name: "Abbasi",
-      nickname: "", // EDIT
+      nickname: "Abbasi", // EDIT
       role: "Slightly Yellow, Entirely Unbothered", // EDIT
       teaser: "Cap on. Saturation up.", // EDIT
       bio: "All black, cap on, glasses on, face set to a colour profile the rest of us were not given access to.", // EDIT
@@ -162,7 +162,7 @@ window.MASAIR = {
     {
       id: "hasan",
       name: "Hasan",
-      nickname: "", // EDIT
+      nickname: "Sid Sid", // EDIT
       role: "All-Black Everything Department", // EDIT
       teaser: "The only serious face in the building.", // EDIT
       bio: "Black on black on black, glasses, and the expression of a man who was told this would be a normal photo.", // EDIT
@@ -181,7 +181,7 @@ window.MASAIR = {
     {
       id: "ad",
       name: "AD",
-      nickname: "", // EDIT
+      nickname: "Willy", // EDIT
       role: "Head of the Right-Hand Side", // EDIT
       teaser: "Biggest smile, closest to the camera.", // EDIT
       bio: "Blue blazer, far right, smiling like he already knows which reel this photo is going to end up in.", // EDIT
@@ -200,7 +200,7 @@ window.MASAIR = {
     {
       id: "ruhaan",
       name: "Ruhaan",
-      nickname: "", // EDIT
+      nickname: "Chootar", // EDIT
       role: "Resident Cat", // EDIT
       teaser: "Four legs. One face. No comment.", // EDIT
       bio: "Showed up to a formal event as a cat and walked straight across the front of the shot. Honestly the most relaxed person here.", // EDIT
@@ -238,7 +238,7 @@ window.MASAIR = {
     {
       id: "bilal",
       name: "Bilal",
-      nickname: "", // EDIT
+      nickname: "Pooks", // EDIT
       role: "Airborne Division", // EDIT
       teaser: "Wings out. Moustache on.", // EDIT
       bio: "A full bird with the wings open, and next to it, one floating, delighted head. The body and the face have not yet been formally introduced.", // EDIT
