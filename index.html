@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Tampa De Masair — the group chat escaped</title>
+  <meta name="description" content="The official, deeply questionable clubhouse of Tampa De Masair. Tap someone. Get the lore.">
+  <meta property="og:title" content="Tampa De Masair">
+  <meta property="og:description" content="The group chat escaped. Tap someone. Get the lore.">
+  <meta property="og:image" content="images/group.jpg">
+  <meta name="theme-color" content="#f4ead8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600;700&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="images/group.jpg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#masair">Skip to the Masair</a>
+
+  <header class="nav">
+    <a class="nav__brand" href="#top" aria-label="Tampa De Masair, back to top">TdM</a>
+    <nav aria-label="Sections">
+      <a href="#masair">Masair</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#reels">Reels</a>
+      <a href="#lore">Lore</a>
+    </nav>
+    <button class="chaos-btn" id="chaosBtn" type="button" aria-pressed="false">Chaos Mode</button>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="hero__text">
+        <p class="hero__sub" id="subline"></p>
+        <h1 class="wordmark" aria-label="Tampa De Masair">
+          <span class="wordmark__a" aria-hidden="true">TAMPA</span>
+          <span class="wordmark__de" aria-hidden="true">de</span>
+          <span class="wordmark__b" aria-hidden="true">MASAIR</span>
+        </h1>
+        <p class="hero__headline" id="headline"></p>
+        <div class="hero__actions">
+          <a class="btn btn--ink" href="#masair">Meet the Masair</a>
+          <a class="btn btn--teal" href="#reels">Watch the Reels</a>
+        </div>
+      </div>
+
+      <div class="hero__photo">
+        <figure class="frame" id="groupPhoto" tabindex="-1">
+          <span class="tape tape--l" aria-hidden="true"></span>
+          <span class="tape tape--r" aria-hidden="true"></span>
+          <div class="frame__img">
+            <img id="groupImg" src="images/group.jpg" width="900" height="759"
+                 alt="Tampa De Masair group photo: eight friends in formal wear standing in a row, two birds with human faces flying above them, and a cat with a human face walking in front.">
+            <div class="hotspots" id="hotspots"></div>
+          </div>
+          <figcaption>
+            <span class="frame__caption" id="photoCaption"></span>
+            <span class="frame__hint" id="photoHint" aria-live="polite">Tap someone. Get the lore.</span>
+          </figcaption>
+          <span class="stamp" aria-hidden="true">100%<br>real<br>photo</span>
+        </figure>
+        <span class="doodle doodle--birds" aria-hidden="true">yes, those are birds ↘</span>
+        <span class="doodle doodle--cat" aria-hidden="true">↖ don't ask about the cat</span>
+      </div>
+
+      <div class="roster">
+        <p class="roster__label">Or pick a name:</p>
+        <ul class="roster__list" id="roster"></ul>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true"><div class="marquee__track" id="marquee"></div></div>
+
+    <!-- ============ MEMBERS ============ -->
+    <section class="section" id="masair">
+      <header class="section__head">
+        <p class="kicker">The lineup</p>
+        <h2>Meet the Masair</h2>
+        <p class="section__note">All stats are scientifically measured by looking at one photo.</p>
+      </header>
+      <div id="members"></div>
+    </section>
+
+    <!-- ============ QUIZ ============ -->
+    <section class="section section--ink" id="quiz">
+      <header class="section__head">
+        <p class="kicker">Personality test, zero science</p>
+        <h2>Which Masair Are You?</h2>
+      </header>
+      <div class="quiz" id="quizBox"></div>
+    </section>
+
+    <!-- ============ REELS ============ -->
+    <section class="section" id="reels">
+      <header class="section__head">
+        <p class="kicker">The reels</p>
+        <h2>Evidence We Shouldn't Have Internet</h2>
+      </header>
+      <div class="reels" id="reelGrid"></div>
+      <p class="center"><a class="btn btn--mango btn--big" id="moreIg" target="_blank" rel="noopener">More nonsense on Instagram ↗</a></p>
+    </section>
+
+    <!-- ============ LORE ============ -->
+    <section class="section section--paper" id="lore">
+      <header class="section__head">
+        <p class="kicker">Museum of us</p>
+        <h2>Group Lore</h2>
+      </header>
+      <div class="lore" id="loreList"></div>
+      <button class="paw" id="paw" type="button" aria-label="Suspicious paw print">🐾</button>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="wordmark wordmark--small" aria-hidden="true">
+      <span class="wordmark__a">TAMPA</span><span class="wordmark__de">de</span><span class="wordmark__b">MASAIR</span>
+    </p>
+    <p class="footer__sign" id="signOff"></p>
+    <a class="btn btn--teal btn--big" id="followIg" target="_blank" rel="noopener"></a>
+    <p class="footer__small"><a href="#top">Back to the group photo ↑</a></p>
+  </footer>
+
+  <a class="backtop" id="backTop" href="#top" hidden>↑ Group photo</a>
+
+  <!-- Lore dialog -->
+  <dialog class="dialog" id="loreDialog" aria-labelledby="dlgTitle">
+    <button class="dialog__close" type="button" id="dlgClose" aria-label="Close">✕</button>
+    <p class="kicker" id="dlgKicker"></p>
+    <h3 id="dlgTitle"></h3>
+    <img id="dlgImg" alt="" hidden>
+    <p id="dlgText"></p>
+    <div class="dialog__actions">
+      <button class="btn btn--ink" type="button" id="dlgCopy">Copy link to this Masair</button>
+    </div>
+  </dialog>
+
+  <!-- Chaos layer -->
+  <div class="chaos" id="chaosLayer" aria-hidden="true"></div>
+  <button class="chaos-stop" id="chaosStop" type="button" hidden>■ Stop the chaos</button>
+
+  <!-- Cat easter egg -->
+  <div class="cat-egg" id="catEgg" hidden>
+    <img id="catEggImg" alt="">
+    <p><strong>Meow.</strong> You found <span id="catEggName"></span>.</p>
+    <button type="button" class="btn btn--ink" id="catEggClose">Shoo</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="content.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
